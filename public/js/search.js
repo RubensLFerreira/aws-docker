@@ -6,6 +6,7 @@ export const handleSearch = async (event) => {
   const btnSearch = document.querySelector('#btn-search');
   const searchResult = document.querySelector('#search-result');
   const resultMeta = document.querySelector('.result-meta');
+  const publicIP = "52.23.253.158"
 
   btnSearch.disabled = true;
   searchResult.innerHTML = '';
@@ -14,7 +15,7 @@ export const handleSearch = async (event) => {
 
   try {
     const response = await fetch(
-      `http://localhost:8080/articles?q=${searchArticle}`,
+      `http://${publicIP}:8080/articles?q=${searchArticle}`,
     );
 
     if (!response.ok) {
