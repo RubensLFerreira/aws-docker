@@ -1,0 +1,39 @@
+body {
+  background-image: url('../assets/img/background.png');
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+.container-input {
+  background-color: rgb(48, 48, 48);
+  text-align: center;
+  height: 3rem;
+  padding: 0.5rem;
+}
+
+.search-result {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+.item {
+  margin-top: 2rem;
+}
+
+.result-meta {
+  color: #fff;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.result-meta p {
+  margin-top: 0.7rem;
+}
+
+.result-meta span {
+  border-bottom: 5px solid #bd561dff;
+  padding: 0.4rem;
+  border-radius: 5px;
+}
