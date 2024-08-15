@@ -1,6 +1,8 @@
-import { handleSearch } from './search.js';
+import { handleSearch } from './articleSearch/search.js';
+import { handlePopular } from './articlePopular/popular.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const btnSearch = document.querySelector('#btn-search');
-  btnSearch.addEventListener('click', handleSearch);
+  handlePopular();
+  const formSearch = document.querySelector('#form-search');
+  formSearch.addEventListener('submit', handleSearch);
 });

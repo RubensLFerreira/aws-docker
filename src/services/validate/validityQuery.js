@@ -8,9 +8,6 @@ exports.validityQuery = (queries) => {
         case 'end_date':
           queries[key] = '20211231';
           break;
-        case 'fq':
-          queries[key] = 'The New Yor Times';
-          break;
         case 'sort':
           queries[key] = 'newest';
           break;

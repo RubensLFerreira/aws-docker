@@ -2,10 +2,10 @@
   "name": "sprints-2-3-pb-aws-julho-a",
   "version": "1.0.0",
   "description": "Avaliação das segunda e terceira sprints do programa de bolsas Compass UOL para formação em machine learning para AWS.",
-  "main": "src/app.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "node --watch src/app.js"
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
   },
   "keywords": [],
   "author": "",
