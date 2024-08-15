@@ -9,8 +9,8 @@ export const handleSearch = async (event) => {
 
   const query = formSearch.querySelector('#search-article').value.trim();
   const sort = formSearch.querySelector('#sort').value || 'newest';
-  const beginDate = formSearch.querySelector('#begin-date').value || '20200101';
-  const endDate = formSearch.querySelector('#end-date').value || '20201212';
+  const beginDate = formSearch.querySelector('#begin-date').value || '18510718';
+  const endDate = formSearch.querySelector('#end-date').value || '20240707';
 
   searchResult.innerHTML = '';
   resultMeta.innerHTML = '';

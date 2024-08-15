@@ -25,11 +25,10 @@
   </head>
 
   <body>
-    
-    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-      <div class="container-fluid">
+    <nav class="navbar bg-dark border-body" data-bs-theme="dark">
+      <div class="container d-flex justify-content-center">
         <a class="navbar-brand" href="index.html">
-          <img style="width: 40px;" src="./assets/img/logo-nyt.png" alt="logo">
+          <img src="./assets/img/logo-nyt.png" alt="Bootstrap" width="40" height="40">
         </a>
       </div>
     </nav>
@@ -40,12 +39,12 @@
         <input class="form-control me-2" type="date" name="begin-date" id="begin-date">
       </div>
     
-      <div class="col-md-4">
+      <div class="item col-md-4">
         <label for="end-date" class="form-label">End date</label>
         <input class="form-control me-2" type="date" name="end-date" id="end-date">
       </div>
     
-      <div class="col-md-4">
+      <div class="item col-md-4">
         <label for="sort" class="form-label">Order by</label>
         <select id="sort" class="form-select" aria-label="Default select example">
           <option selected value="">Select</option>
@@ -55,11 +54,11 @@
         </select>
       </div>
     
-      <div class="col-md-10">
+      <div class="item col-md-10">
         <input class="form-control me-2" type="search" id="search-article" placeholder="Enter your search" required/>
       </div>
     
-      <div class="col-md-2">
+      <div class="item col-md-2">
         <button id="btn-search" class="btn btn-secondary" type="submit">
           Search 
         </button>
@@ -72,6 +71,5 @@
         </div>
         <div id="search-result" class="search-result"></div>
       </div>
-   
   </body>
 </html>
