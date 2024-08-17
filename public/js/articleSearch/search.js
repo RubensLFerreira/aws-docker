@@ -20,7 +20,7 @@ export const handleSearch = async (event) => {
 
   try {
     const response = await fetch(
-      `http://${PUBLIC_IP}:8080/articles?begin_date=${beginFormat}&end_date=${endFormat}&q=${query}&sort=${sort}`,
+      `http://44.202.205.50:8080/articles?begin_date=${beginFormat}&end_date=${endFormat}&q=${query}&sort=${sort}`,
     );
 
     const data = await response.json();
