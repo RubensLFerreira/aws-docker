@@ -3,7 +3,7 @@ import { loadCardsPopular } from './cards.js';
 export const handlePopular = async () => {
   const searchResult = document.querySelector('#search-result');
   try {
-    const response = await fetch('http://localhost:8080/popular');
+    const response = await fetch(`http://${PUBLIC_IP}:${SERVER_PORT}/popular`);
     const data = await response.json();
     loadCardsPopular(data.results);
   } catch (error) {
