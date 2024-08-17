@@ -17,10 +17,11 @@ export const handleSearch = async (event) => {
 
   const beginFormat = beginDate.split('-').join('');
   const endFormat = endDate.split('-').join('');
+  const apiUrlSearch = 'http://44.202.205.50:8080/articles';
 
   try {
     const response = await fetch(
-      `http://44.202.205.50:8080/articles?begin_date=${beginFormat}&end_date=${endFormat}&q=${query}&sort=${sort}`,
+      `${apiUrlSearch}?begin_date=${beginFormat}&end_date=${endFormat}&q=${query}&sort=${sort}`,
     );
 
     const data = await response.json();
