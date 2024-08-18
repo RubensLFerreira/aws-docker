@@ -1,10 +1,10 @@
 import { loadCardsPopular } from './cards.js';
+import { config } from '../config/index.js';
 
 export const handlePopular = async () => {
   const searchResult = document.querySelector('#search-result');
-  const apiUrlPopular = 'http://44.202.205.50:8080/popular';
   try {
-    const response = await fetch(apiUrlPopular);
+    const response = await fetch(`http://${config.WEB_HOSTNAME}:${config.SERVER_PORT}/popular`);
     const data = await response.json();
     loadCardsPopular(data.results);
   } catch (error) {

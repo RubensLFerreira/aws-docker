@@ -1,5 +1,6 @@
 import { loadCardsSearch } from './cards.js';
 import { loadMetasSearch } from './meta.js';
+import { config } from '../config/index.js';
 
 export const handleSearch = async (event) => {
   event.preventDefault();
@@ -17,11 +18,10 @@ export const handleSearch = async (event) => {
 
   const beginFormat = beginDate.split('-').join('');
   const endFormat = endDate.split('-').join('');
-  const apiUrlSearch = 'http://44.202.205.50:8080/articles';
 
   try {
     const response = await fetch(
-      `${apiUrlSearch}?begin_date=${beginFormat}&end_date=${endFormat}&q=${query}&sort=${sort}`,
+      `http://${config.WEB_HOSTNAME}:${config.SERVER_PORT}/articles?begin_date=${beginFormat}&end_date=${endFormat}&q=${query}&sort=${sort}`,
     );
 
     const data = await response.json();
